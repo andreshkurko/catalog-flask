@@ -2,4 +2,32 @@
 
 {% block title %} Home page {% endblock %}
 
-{% block body %} <h1>Home Page</h1> {% endblock %}
+{% block body %}
+    <div class="container pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <hr>
+        <h1 class="display-5">קטלוג</h1>
+    </div>
+    <div class="container marketing">
+        <div class="container row">
+            <div class="col-lg-4">
+                <p class="text-center">
+                    <img src="{{ url_for('static', filename='/images/68_oooo.plus.png') }}"/>
+                </p>
+                <h2 class="text-center">פרקטים</h2>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <p class="text-center">
+                    <img src="{{ url_for('static', filename='/images/1768_oooo.plus.png') }}" width="270px"/>
+                </p>
+                <h2 class="text-center">שטיחים</h2>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <p class="text-center">
+                    <img src="{{ url_for('static', filename='/images/1208_oooo.plus.png') }}" width="270px"/>
+                </p>
+                <h2 class="text-center">PVC</h2>
+            </div><!-- /.col-lg-4 -->
+        </div>
+    </div>
+
+{% endblock %}
