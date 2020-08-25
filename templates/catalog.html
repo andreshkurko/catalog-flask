@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block title %} Home page {% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div class="position-relative overflow-hidden p-md-0 text-center bg-light">
+            <div class="col-md-8 p-lg-1 mx-auto my-1">
+                <h1 class="display-4 font-weight-normal">קטלוג</h1>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+
+     <div class="container">
+            <div class="row">
+                <div class="col-sm-4 text-center padding wow fadeIn animated" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 300ms; animation-name: fadeIn;">
+                    <div class="single-service">
+                        <div class="wow scaleIn animated" data-wow-duration="500ms" data-wow-delay="300ms" style="visibility: visible; animation-duration: 500ms; animation-delay: 300ms; animation-name: scaleIn;">
+                            <img src="{{ url_for('static', filename='/images/68_oooo.plus.png') }}"/>
+                        </div>
+                        <h2 class="text-center"><a href="/">פרקטים</a></h2>
+                    </div>
+                </div>
+                <div class="col-sm-4 text-center padding wow fadeIn animated" data-wow-duration="1000ms" data-wow-delay="600ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 600ms; animation-name: fadeIn;">
+                    <div class="single-service">
+                        <div class="wow scaleIn animated" data-wow-duration="500ms" data-wow-delay="600ms" style="visibility: visible; animation-duration: 500ms; animation-delay: 600ms; animation-name: scaleIn;">
+                            <img src="{{ url_for('static', filename='/images/1768_oooo.plus.png') }}" width="270px"/>
+                        </div>
+                        <h2 class="text-center"><a href="/">שטיחים</a></h2>
+                    </div>
+                </div>
+                <div class="col-sm-4 text-center padding wow fadeIn animated" data-wow-duration="1000ms" data-wow-delay="900ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 900ms; animation-name: fadeIn;">
+                    <div class="single-service">
+                        <div class="wow scaleIn animated" data-wow-duration="500ms" data-wow-delay="900ms" style="visibility: visible; animation-duration: 500ms; animation-delay: 900ms; animation-name: scaleIn;">
+                            <img src="{{ url_for('static', filename='/images/1208_oooo.plus.png') }}" width="270px"/>
+                        </div>
+                        <h2 class="text-center"><a href="/catalog_pvc">PVC</a></h2>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 text-center padding wow fadeIn animated" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 300ms; animation-name: fadeIn;">
+                    <div class="single-service">
+                        <div class="wow scaleIn animated" data-wow-duration="500ms" data-wow-delay="300ms" style="visibility: visible; animation-duration: 500ms; animation-delay: 300ms; animation-name: scaleIn;">
+                            <img src="images/services/1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 text-center padding wow fadeIn animated" data-wow-duration="1000ms" data-wow-delay="600ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 600ms; animation-name: fadeIn;">
+                    <div class="single-service">
+                        <div class="wow scaleIn animated" data-wow-duration="500ms" data-wow-delay="600ms" style="visibility: visible; animation-duration: 500ms; animation-delay: 600ms; animation-name: scaleIn;">
+                            <img src="images/services/2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 text-center padding wow fadeIn animated" data-wow-duration="1000ms" data-wow-delay="900ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 900ms; animation-name: fadeIn;">
+                    <div class="single-service">
+                        <div class="wow scaleIn animated" data-wow-duration="500ms" data-wow-delay="900ms" style="visibility: visible; animation-duration: 500ms; animation-delay: 900ms; animation-name: scaleIn;">
+                            <img src="images/services/3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+{% endblock %}
